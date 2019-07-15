@@ -17,7 +17,7 @@ Saving backups to GitHub for added protection, such as a test results file
 1. Add a build variable for your GitHub personal access token (PAT)
 2. Save the PowerShell script to your Azure DevOps repository after filling out the required inputs
 3. In your pipeline, add a PowerShell script task
-	a. Click the ellipses ("...") under Script Path to select the uploaded PowerShell script
-	b. Expand the Environment Variables section and add a variable for your GitHub PAT
-	c. Name the variable githubpat and set the value to $({your build variable name})
-	d. If desired, you can set another Environment Variable for your local build path: set the value to $(Build.Repository.LocalPath)
+	1. Click the ellipses ("...") under Script Path to select the uploaded PowerShell script
+	2. Expand the Environment Variables section and add a variable for your GitHub PAT
+	3. Name the variable githubpat and set the value to $({your build variable name})
+	4. If desired, you can set another Environment Variable for your local build path: set the value to $(Build.Repository.LocalPath)

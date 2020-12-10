@@ -1,5 +1,7 @@
 # Programmatically Set Group Permissions for a Git Repository in Azure DevOps Services
-Anyone who's ever tried to set permissions for Azure DevOps programmatically knows how painful it is just to figure out, let alone implement. The documentation lacks both details and examples, and it sometimes feels like a long game of Guess-and-Check. I've put together this guide in hopes that it may help clear up some of the enigma. This guide assumes you've installed and are familiar with Azure CLI, so if you haven't, head over [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) and [here](https://docs.microsoft.com/en-us/azure/devops/cli/index?view=azure-devops) first.
+Setting permissions for Azure DevOps programmatically can be a bit of a mystery, especially if you're new to doing it. Before getting started, I highly recommend checking out the [new documentation](https://docs.microsoft.com/en-us/azure/devops/organizations/security/namespace-reference?view=azure-devops) that gives excellent guidance on permission namespaces. 
+
+This guide walks you through setting the permissions for a group on a Git repository. This guide assumes you've installed and are familiar with Azure CLI, so if you haven't, head over [here](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli?view=azure-cli-latest) and [here](https://docs.microsoft.com/en-us/azure/devops/cli/index?view=azure-devops) first.
 
 ## Steps to Set the Permissions
 1. Get the group’s descriptor
